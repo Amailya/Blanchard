@@ -1,0 +1,172 @@
+@font-face{
+    font-family:'OpenSans';
+    src: url('../font/OpenSans-Regular.woff2') format(woff2),
+    url(../font/OpenSans-Regular.woff) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:'OpenSans';
+    src: url('../font/OpenSans-SemiBold.woff2') format(woff2),
+    url(../font/OpenSans-SemiBold.woff) format(woff2);
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family:'OpenSans';
+    src: url('../font/OpenSans-Bold.woff2') format(woff2),
+    url(../font/OpenSans-Bold.woff) format(woff2);
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.о нас-section,
+.Каталог-section,
+.События-section,
+.Проекты-section,
+.Контакты-section,
+.footer-wrap{
+    max-width: 1080px;
+    margin:0 auto;
+}
+/* header */
+.header {
+  width: 100%;
+  height: 100px;              /* header-ի բարձրություն */
+  background-color: #000;    /* սև ֆոն */
+}
+
+.main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;           /* ձախից 40px, աջից էլ 40px ընդհանուր */
+}
+
+.logo {
+  height: 40px;              /* logo բարձրություն */
+  width: auto;
+  margin-right: 40px;        /* logo-ից հետո տարածություն */
+}
+
+.nav {
+  display: flex;
+  gap: 30px;                 /* item-ների միջև հեռավորություն */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;                   /* թույլ է տալիս հավասարակշռել */
+  justify-content: center;   /* կենտրոնացնում է նավիգացիան */
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #fff;               /* սպիտակ տեքստ */
+  text-decoration: none;
+}
+
+.search-icon {
+  height: 26px;
+  width: auto;
+  margin-left: 30px;         /* աջ կողմում 30px հեռավորություն */
+  cursor: pointer;
+}
+
+/* шапка */
+.шапка{
+  background-image: url(../images3/img.svg);
+  height: 700px;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.шапка-list {
+   max-width: 579px;
+   height: 500px;
+   padding-left:150px;
+  }
+  .hero-title{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 68px;
+    color:#ffffff;
+  }
+  .шапка-paragraph{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color:#fff;
+    padding-bottom: 30px;
+  }
+ .button {
+  border: 2px solid transparent;  /* 2px հաստությամբ */
+  border-radius: 100px;
+  background-color: #9D5CD0;
+  width: 314px;
+  height: 70px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 60px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button:hover {
+  border-color: #7943A4;  
+  background-color: #8A4EB5; 
+}
+.button:focus-visible {
+outline-offset: 3px;
+}
+.button:active {
+  background-color: #7943A4;
+  border-color: #D1A9F0;
+}
+
+/*О нас */
+.О нас-titile{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #333333;
+  padding-top: 80px;
+}
+.О нас-paragraph{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color:#333;
+}
+
+.Галерея-section{
+  background-image: url(../images3/img.jpg);
+  height: 595px;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  background-repeat: no-repeat;
+    background-size: cover;
+}
